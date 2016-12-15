@@ -2,11 +2,15 @@
 
 import React, {
   Component,
+  PropTypes
+} from 'react';
+import {
+  requireNativeComponent,
   StyleSheet,
   Text,
 } from 'react-native';
 
-var { requireNativeComponent, PropTypes } = React;
+const RNTextInputLayout = requireNativeComponent('RNTextInputLayout', null);
 
 class TextInputLayout extends Component {
   constructor(props) {
@@ -28,6 +32,5 @@ var styles = {
 
 }
 
-var RNTextInputLayout = requireNativeComponent('RNTextInputLayout', null);
 
 module.exports = TextInputLayout;

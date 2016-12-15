@@ -26,6 +26,13 @@
   "repository": "https://github.com/danielbm/react-native-text-input-layout",
   "bugs": "https://github.com/danielbm/react-native-text-input-layout/issues",
   "peerDependencies": {
-    "react-native": ">=0.16"
+    "react": ">=15.3.0",
+    "react-native": ">=0.33"
+  },
+  "rnpm": {
+    "android": {
+      "sourceDir": ".",
+      "packageInstance": "new RNTextInputLayoutPackage()"
+    }
   }
 }
